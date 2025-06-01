@@ -313,7 +313,7 @@ export default function FunResume() {
           : "bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"
       }`}
     >
-      <audio ref={audioRef} controls className="display-none" />
+      <audio ref={audioRef} controls className="hidden" />
       {/* Animated background particles */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         {[...Array(20)].map((_, i) => (
