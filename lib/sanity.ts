@@ -3,7 +3,7 @@ import imageUrlBuilder from "@sanity/image-url";
 import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 
 const client = createClient({
-  projectId: process.env.SANITY_PROJECT_ID || "mzwg0wia", // replace with your project ID
+  projectId: process.env.SANITY_PROJECT_ID, // replace with your project ID
   dataset: process.env.SANITY_DATASET || "production", // replace with your dataset name
 
   useCdn: true, // use CDN for faster response
