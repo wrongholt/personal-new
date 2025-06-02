@@ -7,9 +7,8 @@ import {
   PortableText,
   PortableTextMarkComponentProps,
   PortableTextReactComponents,
-  TypedObject,
 } from "@portabletext/react";
-
+import { PortableTextBlock } from "@portabletext/types";
 // You'll need to create this function in your lib/sanity.js file
 import { getPostBySlug, urlFor } from "../../../lib/sanity";
 
@@ -21,7 +20,7 @@ type Post = {
   };
   publishedAt: string;
   excerpt?: string;
-  body?: TypedObject | TypedObject[]; // Portable Text content
+  body?: PortableTextBlock | PortableTextBlock[]; // Portable Text content
   image?: {
     asset: {
       url: string;
