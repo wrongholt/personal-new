@@ -1,7 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/navigation";
+import {
+  Geist,
+  Geist_Mono,
+  Unbounded,
+  Zen_Kaku_Gothic_Antique,
+  IM_Fell_English_SC,
+  Orbitron,
+} from "next/font/google";
+
+Unbounded({ subsets: ["latin"] });
+Zen_Kaku_Gothic_Antique({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+IM_Fell_English_SC({ subsets: ["latin"], weight: "400" });
+Orbitron({ subsets: ["latin"] });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
